@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Comment_module</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="all_comments header_item">
+                <span class="text big_text">Комментарии</span>
+                <span class="quantity">(80)</span>
+            </div>
+            <div class="sort_list header_item">
+                <div class="dropdown">
+                    <button class="dropdown_btn text">По количеству оценок</button>
+                    <ul class="dropdown_list hide">
+                        <li class="dropdown_list-item" data-value="rate">По количеству оценок</li>
+                        <li class="dropdown_list-item" data-value="actual">По актуальности</li>
+                        <li class="dropdown_list-item" data-value="quantity">По количеству ответов</li>
+                        <li class="dropdown_list-item" data-value="date">По дате</li>
+                    </ul>
+                    <input class="dropdown_input-hidden" type="text" name="select_sort" value="">
+                </div>
+            </div>
+            <div class="favour header_item">
+                <span class="text small_text">Избранное</span>
+                <div class="icon"></div>
+            </div> 
+        </header>
+        <div class="comment_input_block">
+            <div class="user_avatar"></div>
+            <div class="text_comment_input_block">
+                <span class="user_name">Роман Токарчук</span>
+                <span class="char_limit"> Макс. 1000 символов</span>
+                <textarea class="input" name="comment" id="new_comment" placeholder="Введите текст сообщения..."></textarea>
+            </div>
+            <button class="submit_btn">Отправить</button>
+        </div>
+        <!-- <div class="comment_block">
+            <div class="user_avatar"></div>
+            <div class="text_comment_block">
+                <div class="user_info">
+                    <span class="user_name">Роман Токарчук</span>
+                    <span class="date_comment">19.07.2023</span>
+                </div>
+                <div class="main_text">Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 'Кольца власти' просто позаимствовали имена из оригинала, куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.</div>
+                <div class="actions">
+                    <div class="reply action">
+                        <div class="icon"></div>
+                        <span class="text small_text">Ответить</span>
+                    </div>
+                    <div class="favour action">
+                        <div class="icon"></div>
+                        <span class="text small_text">В избранное</span>
+                    </div>
+                    <div class="rate action">
+                        <button class="rate_btn up">+</button>
+                        <span class="rating">0</span>
+                        <button class="rate_btn down">-</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script type="module" src="./js/select.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
